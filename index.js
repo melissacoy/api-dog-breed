@@ -6,7 +6,7 @@ function onSubmit(){
     });
 }
 function getDog(breed){
-    fetch('https://dog.ceo/api/breed' + breed + '/images/random')
+    fetch('https://dog.ceo/api/breed/' + breed + '/images/random')
     .then(response=> response.json())
     .then(responseJson => {
         console.log(responseJson);
