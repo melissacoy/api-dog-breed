@@ -10,7 +10,7 @@ function getDog(breed){
     .then(response=> response.json())
     .then(responseJson => {
         console.log(responseJson);
-        if(responseJson.status !== 'success'){
+        if(responseJson.status !='success'){
             throw Error(responseJson.message);
         }
         else{
