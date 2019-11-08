@@ -15,7 +15,7 @@ function getDog(dogBreed){
             throw Error(responseJson.message);
         }
         else{
-            $(`.js-dogs`).html(`<img src"${responseJson.message}" alt="picture of ${dogBreed}" class="results-img">`)
+            $(`.js-dogs`).html(`<img src="${responseJson.message}" alt="picture of ${dogBreed}" class="results-img">`)
         }
     })
     .catch(error => {
@@ -24,8 +24,6 @@ function getDog(dogBreed){
     });
 }
 function clearValues() {
-    userNum = "";
-    endpoint = "";
-    $(`.js-dogs`).html("");
+  $(`.js-dogs`).html("");
 }
 $(onSubmit);

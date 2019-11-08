@@ -15,10 +15,10 @@
   form{
     display: block;
   }
-  .hidden {
-    display: none;
-  }
   .results{
     max-width: 600px;
     margin: 0 auto;
+  }
+  .results-img {
+    width: 80%;
   }
